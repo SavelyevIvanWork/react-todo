@@ -1,0 +1,25 @@
+.todo-item{
+  border-bottom: 2px solid #333333;
+}
+
+.todo-item__wrapper {
+  display: flex;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.todo-item__text {
+  width: 100%;
+  padding: 10px;
+}
+
+.todo-item__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: inherit;
+}
+
+.todo-item__done {
+  text-decoration: line-through;
+}
