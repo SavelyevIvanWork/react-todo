@@ -21,7 +21,7 @@ function TodoItem(props) {
                        htmlFor={props.todo.id}>
                     {props.todo.title}
                 </label>
-                <button className="todo-item__button" onClick={props.removeTodo}>Close</button>
+                <button className="todo-item__button" onClick={props.removeTodo}><span>Close</span></button>
             </div>
         </div>
     )

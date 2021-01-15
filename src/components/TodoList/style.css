@@ -1,3 +1,14 @@
+.main-todo {
+    max-height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.main-todo::-webkit-scrollbar {
+    display: none;
+}
+
+
 .main-todo__input-wrapper {
     display: flex;
 }

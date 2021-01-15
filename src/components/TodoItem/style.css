@@ -4,6 +4,7 @@
 
 .todo-item__wrapper {
   display: flex;
+  align-items: center;
   margin: 0 20px;
   text-align: left;
 }
@@ -14,10 +15,18 @@
 }
 
 .todo-item__button {
+  width: 25px;
+  height: 25px;
   margin: 0;
   padding: 0;
   border: none;
-  background: inherit;
+  background: #ffffff url("./dustbin.svg") no-repeat center;
+  background-size: cover;
+
+}
+
+.todo-item__button span {
+  display: none;
 }
 
 .todo-item__done {

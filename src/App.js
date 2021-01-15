@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import TodoList from "./components/TodoList";
 import AddTodo from "./components/AddTodo";
+import FilterTodo from "./components/FilterTodo";
 
 
 function App() {
@@ -12,6 +13,17 @@ function App() {
             {id: 3, completed: false, title: 'Купить масло'},
         ]
     )
+
+    const [filter, setFilter] = React.useState(
+        ["All", "ToDo"]
+    )
+
+    function getTodos() {
+        setFilter(
+        )
+    }
+
+    getTodos()
 
     function toggleTodo(id) {
         setTodos(
@@ -41,6 +53,7 @@ function App() {
             <h1 className='main-todo__title'>Your todo list</h1>
             <AddTodo onCreate={addTodo}/>
             <TodoList removeTodo={removeTodo} todos={todos} onToggle={toggleTodo}/>
+            <FilterTodo/>
         </div>
     );
 }

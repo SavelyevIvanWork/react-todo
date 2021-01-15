@@ -11,6 +11,7 @@ function AddTodo({onCreate}) {
         const enter = e.keyCode
         if (value.trim() && enter === 13) {
             onCreate(value)
+            setValue('')
         }
     }
 
